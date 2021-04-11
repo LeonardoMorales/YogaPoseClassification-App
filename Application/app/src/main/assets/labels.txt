@@ -1,0 +1,10 @@
+BoundAngle
+Catcow
+ChairPose
+Half Forward Bend Pose
+Tree Pose
+Garland Pose
+Triangle Pose
+High Lunge Pose
+DownwardDog Pose
+Random

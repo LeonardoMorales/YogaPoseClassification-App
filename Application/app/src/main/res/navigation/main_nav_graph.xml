@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/identifyPoseFragment">
+
+    <fragment
+        android:id="@+id/identifyPoseFragment"
+        android:name="dev.leonardom.detectposesmlandroid.ui.main.fragments.identify_pose.IdentifyPoseFragment"
+        android:label="Identificar Pose Yoga"
+        tools:layout="@layout/fragment_identify_pose" >
+    </fragment>
+
+    <action
+        android:id="@+id/action_global_identifyPoseFragment"
+        app:destination="@id/identifyPoseFragment" />
+
+    <fragment
+        android:id="@+id/captureAnglesFragment"
+        android:name="dev.leonardom.detectposesmlandroid.ui.main.fragments.capture_angles.CaptureAnglesFragment"
+        android:label="Capturar Ángulos"
+        tools:layout="@layout/fragment_capture_angles" >
+    </fragment>
+
+    <action
+        android:id="@+id/action_global_captureAnglesFragment"
+        app:destination="@id/captureAnglesFragment"
+        app:popUpToInclusive="true"
+        app:popUpTo="@id/main_nav_graph"/>
+
+</navigation>

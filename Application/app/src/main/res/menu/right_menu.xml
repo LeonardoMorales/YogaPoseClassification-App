@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/identify_pose"
+        android:title="Identificar pose"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/capture_angles"
+        android:title="Capturar ángulos"
+        app:showAsAction="never"/>
+
+</menu>
