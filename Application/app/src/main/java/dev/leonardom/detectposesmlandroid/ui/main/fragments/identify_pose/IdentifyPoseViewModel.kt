@@ -34,7 +34,7 @@ constructor(
     }
 
     fun doInference(input: Array<FloatArray>): String? {
-        val output = Array(1){ FloatArray(10) }
+        val output = Array(1){ FloatArray(labels!!.size) }
         interpreter.run(input, output)
 
         for(x in 0..9){
@@ -47,7 +47,7 @@ constructor(
 
     @Throws(IOException::class)
     fun loadModelFile(): MappedByteBuffer {
-        val assetFileDescriptor: AssetFileDescriptor = applicationContext.assets.openFd("ypc_m1.tflite")
+        val assetFileDescriptor: AssetFileDescriptor = applicationContext.assets.openFd("ypc_m4.tflite")
         val fileInputStream = FileInputStream(assetFileDescriptor.fileDescriptor)
         val fileChannel: FileChannel = fileInputStream.channel
         val startOffset = assetFileDescriptor.startOffset

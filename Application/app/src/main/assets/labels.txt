@@ -1,10 +1,12 @@
-BoundAngle
-Catcow
-ChairPose
+BoundAngle Pose
+Catcow Pose
+Chair Pose
+Cobra Pose
+Reverse Warrior
 Half Forward Bend Pose
 Tree Pose
 Garland Pose
 Triangle Pose
-High Lunge Pose
 DownwardDog Pose
-Random
+Goddess Squat
+Random Pose
